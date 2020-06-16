@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <!--bootstrap code-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Computer Memory</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="top">
+            <!--Content and header contained in "top" div-->
+            <div class="content">
+                <h1>COMPUTER MEMORY</h1>
+                <a href="ROM.html" class="button">DISCOVER ROM</a>
+                <a href="RAM.html" class="button">DISCOVER RAM</a>
+                <a href="Cache.html" class="button">DISCOVER CACHE</a>
+                <a href="More_Information.html" class="button">MORE INFORMATION</a>
+                <a href="Sources.html" target="_blank" class="button">SOURCES</a>
+                <div id="explore" class="jumbotron">
+                    EXPLORE THIS PAGE BY SCROLLING DOWN
+                </div>
+            </div>
+        </div>
+        <!--Short info about memory-->
+        <div class="information">
+            <div id="first" class="jumbotron col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
+                <h2>What is Computer Memory?</h2>
+            </div>
+            <br/>
+            <br/>
+            <div class="first_text">
+                <ul>
+                    <li><h2>Memory stores all <b>data</b> and <b>instructions</b> used by the computer!</h2></li>
+                    <li><h2>Falls into the <b>storage category</b></h2></li>
+                </ul>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+        <div class="jumbotron">
+            <div class="types">
+                <!--General knowledge about three common types of memory-->
+                <h2>There are 3 main types of memory in computers!</h2>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <img src="images/rom.png" alt="ROM image" class=" col-md-4"/>
+                    <ul class="ROM">
+                        <!--ROM notes-->
+                        <li id="title1" class="col-md-8">ROM(read only memory)
+                            <ul class="jots">
+                                <li>Permanent storage</li>
+                                <li>Programmed during construction at factory</li>
+                                <li>Only to read from, not write to(generally)</li>
+                                <li>Stores the information used for when the PC is turned on/reset</li>
+                                <li>Is non-volatile memory</li>
+                                <li>Sends information to CPU</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h1>(1</h1>
+                    <hr>
+                    <!--RAM notes-->
+                    <img src="images/ram.jpg" alt="ROM image" class=" col-md-4"/>
+                    <ul class="RAM">
+                        <li id="title2" class="col-md-8">RAM(random access memory)
+                            <ul class="jots">
+                                <li>Temporarily storing information used by various components of PC</li>
+                                <li>Any information will be lost when PC turns off or is reset</li>
+                                <li>CPU uses RAM for temporary storage of programs/data</li>
+                                <li>Uses volatile memory</li>
+                                <li>Much larger capacity than ROM</li>
+                                <li>Communicates directly with CPU(sends and receives signals)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h1>(2</h1>
+                    <hr>
+                    <!--Cache notes-->
+                    <img src="images/cache.jpg" alt="Cache image" class="col-md-4"/>
+                    <ul class="Cache">
+                        <li id="title3" class="col-md-4">Cache
+                            <ul class="jots">
+                                <li>High-speed memory where instructions and data are copied and retrieved</li>
+                                <li>Usually embedded in the CPU component</li>
+                                <li>Stores the most often used data and information for faster retrieval</li>
+                                <li>Less latency in data retrieval</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <!-- Bootstrap code-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Computer Memory</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="top_rom">
+            <div class="content_rom">
+                <!--Header-->
+                <div id="see" class="jumbotron">
+                    ROM(Read Only Memory)
+                </div>
+                <!--Buttons to home and the next page-->
+                <a id="back" href="index.html">Back to menu</a>
+                <a id="next" href="RAM.html" target="_blank">Next:RAM</a>
+                <img id="rompic" src="images/rom2.png" alt="ROM image"/>
+                <!--General info-->
+                <h1 id="rom1" class="rom_text">ROM is <b>permanent</b>, <i>non-volatile memory</i>.</h1>
+                <h1 id="rom2" class="rom_text">It is usually <b>programmed</b> during construction at the factory.</h1>
+                <h1 id="rom3" class="rom_text">It contains <b>instructions</b> for reset or turn on of the PC!</h1>
+                <br/>
+                <br/>
+                <br/>
+                <!--Longer explanation-->
+                <p id="par" class="rom_text">ROM contains a <i class="high">grid of columns and rows</i>. The way they intersect is what differentiates it from RAM. ROM uses a <i class="high">diode</i>(semiconductor device that acts as a <b>one-way switch</b> for current and allows current to flow easily in one direction, but severely restricts it from flowing in the opposite direction) to connect the lines if the value is 1. Diodes allows current to flow in one direction but have a certain limit<i class="high">(forward breakover)</i> that decides the current needed before the diode will allow it to pass on down the line. A ROM chip is able send charges <i class="high">greater than the forward breakover</i> to the appropriate column with the chosen row grounded to connect at a certain cell. If a diode is located at that cell, the charge will be <b>conducted</b> through to the ground and the <i class="high">binary system will interpret the cell as a “1”</i> to mean "on".</p>
+                <!--iframes to a youtube video and article-->
+                <iframe id="romvideo" src="https://www.youtube.com/embed/p3q5zWCw8J4"></iframe>
+                <iframe id="romweb" src="https://www.newworldencyclopedia.org/entry/Read-only_memory"></iframe>
+                <div class="jumbotron history">
+                    ~The History of Read Only Memory~
+                </div>
+                <h2 id="types" class="rom_text">Types of ROM include:</h2>
+                <!--insert a timeline image-->
+                <img id="romtime" src="images/rom_timeline.png" alt="Timeline of history of ROM"/>
+                <h2 class="rom_text2">PROM(Programmable Read-Only Memory)</h2>
+                <div class="container">
+                    <!--Discuss different types of ROM-->
+                    <ul id="romlist" class="rom_text">
+                        <li>Can be written to only once by anyone after manufactured</li>
+                        <li>Programmed by PROM programmer device</li>
+                        <li>Written to by using high voltages to permanently destroy or create links(fuses or antifuses) by burning fuses within the chip.</li>
+                        <li>Cheap to manufacture</li>
+                        <li>More fragile than ROM</li>
+                        <li>Good for prototyping and testing data before committing to pricey ROM manufacturing</li>
+                    </ul>
+                    <!--Parallax images(change based off of scrolling)-->
+                    <div class="parallax1"></div>
+                    <h2 id="eprom" class="rom_text2">EPROM (Erasable Programmable Read-Only Memory)</h2>
+                    <ul id="romlist2" class="rom_text">
+                        <!--Discuss different types of ROM-->
+                        <li>Able to be rewritten many times</li>
+                        <li>In order to erase it's memory, you need a tool that emits a certain frequency of UV light</li>
+                        <li>Each chip has a quartz window on top of it that allows the frequency to penetrate plastics and glass over it</li>
+                        <li>Chip must be placed very close to light source(inch or 2) to work</li>
+                        <li>Repeated exposure to UV will wear out the chip</li>
+                        <li>Is able to handle 1000 cycles of erasing and reprogramming</li>
+                        <li>To rewrite, the chip must be erased completely first</li>
+                        <li>To programme the chip, it must be exposed to higher than usual voltage from a machine</li>
+                        <li>After programming, the chip is covered with a label to protect from accidental erasure</li>
+                        <li>If exposed to UV light for more than 10 minutes, the chip will be permanently damaged</li>
+                        <li>Erasing is not selective(the whole chip will be erased)</li>
+                    </ul>
+                    <div class="parallax2"></div>
+                    <h2 id="mrom" class="rom_text2">MROM or Mask ROM (Mask Read Only Memory)</h2>
+                    <ul id="romlist3" class="rom_text">
+                        <!--Discuss different types of ROM-->
+                        <li>Contents of the chip are programmed by the integrated circuit manufacturer</li>
+                        <li>The term "Mask" comes from integrated circuit fabrication, where sections of the chip are masked off during the process of photolithography(process of microfabrication to pattern parts on a thin film using photosensitive chemicals and UV lights. It's used in creating circuits)</li>
+                        <li>To save money, companies must buy mask ROM in large quantities since they must contact and work with a foundry to produce a custom design.</li>
+                        <li>The time between finishing the design for a mask ROM and receiving the finished product is very long because designing the chip is very time intensive.</li>
+                        <li>Mask ROM is impractical for R&D(Research and Development) work since designers constantly need to alter the contents of memory as they develop a design.</li>
+                        <li>If a product is shipped with defective mask ROM, the only way to fix it is to recall the product and physically replace the ROM.</li>
+                    </ul>
+                    <div class="parallax3"></div>
+                    <h2 id="eeprom" class="rom_text2">EEPROM (Electrically Erasable Programmable Read Only Memory)</h2>
+                    <ul id="romlist4" class="rom_text">
+                        <!--Discuss different types of ROM-->
+                        <li>May be reprogrammed with or without erasure of earlier data</li>
+                        <li>Chip doesn’t have to be removed from it's component to be rewritten</li>
+                        <li>Doesn’t have to be completely erased(can change incrementally)</li>
+                        <li>Instead of UV light frequency to erase it, apply electric field to erase targeted cells</li>
+                        <li>Changes 1 byte at a time which makes it hard to use in many products that make quick changes to data stored on the chip because it's too slow(milliseconds per bit whereas ROM and RAM change nanoseconds per bit)</li>
+                        <li>If a product is shipped with defective mask ROM, the only way to fix it is to recall the product and physically replace the ROM.</li>
+                    </ul>
+                    <div class="parallax4"></div>
+                    <h2 id="feeprom" class="rom_text2">Flash EEPROM (Flash Electrically Erasable Programmable Read Only Memory)</h2>
+                    <ul id="romlist5" class="rom_text">
+                        <!--Discuss different types of ROM-->
+                        <li>Uses in-circuit wiring to erase by putting electrical field over the entire chip or on top a certain section called blocks</li>
+                        <li>Much faster that EEPROM because it programmes data in chunks(usually 512 bytes instead of 1 at a time)</li>
+                        <li>Can undergo up to 1,000,000 cycles of changes</li>
+                        <li>Stores as much as 16 GB</li>
+                        <li>Very high durability</li>
+                    </ul>
+                    <!--creating space-->
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="parallax5"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

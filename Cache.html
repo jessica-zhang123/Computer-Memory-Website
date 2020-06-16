@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <!--bootstrap code-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Computer Memory</title>
+        <!--reference to style sheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="cache_head" class="rom_text">
+            Cache Memory
+        </div>
+        <!--buttons-->
+        <a href="index.html" id="back2">Back to menu</a>
+        <a href="More_Information.html" target="_blank" id="next2">Next:More Information</a>
+        <br>
+        <div class="cache_content ram_text">
+            <!--general info-->
+            <p id="cache1">Caches are a type of high-speed memory storage that are usually embedded in the CPU.</p>
+            <p id="cache2">They are much faster than other forms of memory but on average have a lower capacity.</p>
+            <p id="cache3">Frequently used instructions and data can be copied and retrieved in the cache.</p>
+        </div>
+        <img id="cache_pic" src="images/cachepic.jpg" alt="Cache image"/>
+        <!--iframe video-->
+        <iframe id="cachevid" src="https://www.youtube.com/embed/6JpLD3PUAZk"></iframe>
+        <h1 id="levels" class="rom_text2">There are 3 levels of Cache Memory</h1>
+        <p class="rom_text2">L1</p>
+        <div class="rom_text">
+            <ul id="cachelist1">
+                <!--discuss levels of cache-->
+                <li>Very fast</li>
+                <li>Quite small</li>
+                <li>Embedded in the CPU</li>
+                <li>It is split 2 ways~instruction and data cache</li>
+                <li>The instruction cache handles information about the operation the CPU will perform</li>
+                <li>The data cache holds the data that the operation will be done on</li>
+                <li>Has the lowest latency because its closest to the processor</li>
+            </ul>
+        </div>
+        <div id="common" class="rom_text">
+            L1 cache is the fastest memory present in a PC!
+        </div>
+        <p class="rom_text2">L2</p>
+        <div class="rom_text">
+            <ul id="cachelist2">
+                <!--discuss levels of cache-->
+                <li>Secondary cache</li>
+                <li>Can be embedded on the CPU or on separate chip called a coprocessor</li>
+                <li>There is a high-speed alternative bus system connecting it to the CPU</li>
+                <li>This way, it is not slowed by traffic on the main system bus</li>
+            </ul>
+        </div>
+        <hr/>
+        <div id="cachebub" class="rom_text">
+            L2 cache is slower than L1 but has a larger size!
+        </div>
+        <p class="rom_text2">L3</p>
+        <div class="rom_text">
+            <ul id="cachelist3">
+                <!--discuss levels of cache-->
+                <li>Largest cache memory unit, but the slowest one</li>
+                <li>Modern CPUs have a section solely for the L3 cache</li>
+                <li>It takes up a lot of space on the CPU</li>
+                <li>Highest latency</li>
+            </ul>
+        </div>
+        <hr/>
+        <div id="cachebub1" class="rom_text">
+            L3 cache can range between 4MB to 5OMB
+        </div>
+        <p id="cachepar" class="rom_text">From the RAM, data flows to the L3 cache, next to the L2, and lastly L1. When the CPU searches for data in order to fulfill an operation, it <b>first looks for it in the L1 cache</b>. If the CPU finds it, it is called a <i class="high1">cache hit</i>. It then searches for it in the L2, and then L3. If the data is <b>not found</b>, it will attempt to access it from the <b>main memory</b>. We call this a <i class="high1">cache miss</i>. Latency increases significantly when there is a cache miss because the CPU must access the data from the main memory instead.</p>
+    </body>
+</html>

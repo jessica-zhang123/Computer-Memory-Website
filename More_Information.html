@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <!--Bootstrap code-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Computer Memory</title>
+        <!--reference to style sheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <!--creating animated header-->
+        <div class="parallaxinfo">
+            <div class="content">
+                <h1 id="moreinfo">MORE INFORMATION</h1>
+                <h2 id="scrollinfo">SCROLL DOWN</h2>
+            </div>
+        </div>
+    <!--buttons-->
+        <a href="index.html" id="back3">Back to menu</a>
+        <a href="Sources.html" target="_blank" id="next3">Next:Sources</a>
+        <div class="rom_text">
+            <!--Discussing todays view on computer memory-->
+            <p id="infopar">Nowadays, great, powerful pieces of equipment are available for purchase and consumer use. But, memory with great specs like <i class="high">speed, latency, timing, clock speed, transfers, and bandwidth</i> come with a price. A high quality DDR4 RAM can cost upwards of <i class="high">120 dollars on average</i>! Great CPU’s with amazingly fast and upgraded caches will cost around <i class="high">2,500 dollars</i>. Forms of ROM are generally <i class="high">quite cheap</i>, but if you plan to <i class="high">write and erase rewritable forms of ROM</i>, the price of the programmer machine to write it will cost upwards of <i class="high">1,000 dollars</i>. To <i class="high">erase</i> it, you will need to pay about <i class="high">100 dollars</i> for the UV light machine.</p>
+            <div id="buymem" class="rom_text2">What to look for in Computer Memory:</div>
+            <!--creating spec, price table-->
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Popular Brands</th>
+                    <th>Extra costs</th>
+                    <!--making this column larger because it stores more information-->
+                    <th class="large">What to think about when buying</th>
+                </tr>
+                <tr>
+                    <!--type of memory-->
+                    <td>ROM(Read Only Memory)</td>
+                    <!--price point-->
+                    <td>Generally quite cheap</td>
+                    <td>
+                        <!--Common brands known for producing this memory-->
+                        <ul>
+                            <li>G.SKILL</li>
+                            <li>Crucial</li>
+                            <li>Patriot Viper Elite</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <!--extra appliances to purchase-->
+                        <ul>
+                            <li>Programmer machines if you plan to programme ROM~$1000</li>
+                            <li>Eraser machines(UV light) to clear the chip~$100</li>
+                        </ul>
+                    </td>
+                    <td class="large">
+                        <!--Things to think about before purchasing-->
+                        <ul>
+                            <li>Do you want to re-programme your ROM? If so, consider PROM, EPROM, EEPROM, FLASH EEPROM</li>
+                            <li>Do you want to re-programme it many times or just once? If just once, consider PROM</li>
+                            <li>Are you willing to invest in the equipment to write and erase ROM?(UV light eraser, programmer)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <!--type of memory-->
+                    <td>RAM(Random Access Memory)</td>
+                    <!--price point-->
+                    <td>Upwards of $120 on average</td>
+                    <td>
+                        <!--Common brands known for producing this memory-->
+                        <ul>
+                            <li>G.SKILL</li>
+                            <li>Seagate</li>
+                            <li>HP</li>
+                            <li>Dell</li>
+                            <li>Corsair</li>
+                            <li>SK Hynix</li>
+                        </ul>
+                    </td>
+                    <!--extra appliances to purchase-->
+                    <td>Compatible Motherboard</td>
+                    <td class="large">
+                        <ul>
+                            <!--Things to think about before purchasing-->
+                            <li>Decide the type of DRAM you prefer that will accommodate your individual needs</li>
+                            <li>Do you want it to transfer data faster, or have a higher capacity?</li>
+                            <li>For most people, generation 2 and higher of Double Data Rate SDRAM(DDR SDRAM) will be the best fit.</li>
+                            <li>It will be extremely fast because of the DDR and then also run very efficiently because it is synchronous.</li>
+                            <li>They are very fast at transferring data because they double the bandwidth of the SDR.</li>
+                            <li>When looking for RAM, the bare minimum for the average user is 4GB on a PC</li>
+                            <li>Consider your operating system as well. Specifications will require a certain amount of RAM to run.</li>
+                            <li>If you are a multi-tasker, use a virtual machine, or often have many tabs and documents open at once, upgrade to 8GB of RAM.</li>
+                            <li>16 GB of RAM on a PC is more than enough for the average person and will allow you to multitask easily.</li>
+                            <li>Certain professions might need as much as 32GB.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <!--type of memory-->
+                    <td>Cache</td>
+                    <!--price point-->
+                    <td>Good quality CPUs with fast caches cost $2500</td>
+                    <td>
+                        <ul>
+                            <!--Common brands known for producing this memory-->
+                            <li>Intel</li>
+                            <li>Dell</li>
+                            <li>DART</li>
+                            <li>Alienware</li>
+                        </ul>
+                    </td>
+                    <!--extra appliances to purchase-->
+                    <td>High quality CPU processor</td>
+                    <td class="large">
+                        <ul>
+                            <!--Things to think about before purchasing-->
+                            <li>To find a good cache, generally, great caches are included in high quality CPUS</li>
+                            <li>Intel is known for their CPU processors, so any newer generations will provide very fast and efficient caches</li>
+                            <li>Think about what you need from the cache-to store large amounts of data, or be able to access the data in them much quicker?</li>
+                            <li>In Intel cores, there’s roughly 2MB of L3 cache per CPU core</li>
+                            <li>2.5MB per core is more than enough</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <!--Future of computer memory-->
+            <div id="future" class="history">~The future of Computer Memory~</div>
+            <div class="rom_text">
+                <p id="infopar1">The future trends with all these types of memory is that we will see many <i class="high1">game-changing modifications</i> in the industry. These upgrades might make storage larger but be able to <i class="high1">lower the price of having more Gigabytes</i>. They could also even <i class="high1">increase transfer speed</i> even more by maybe <i class="high1">doubling, tripling, quadrupling, bandwidth</i>. More pins would make the RAM even faster. RAM across every piece of technology is noticing a higher demand, so we can expect future products to be released with <i class="high1">much larger quantities</i>.</p>
+                <p id="infopar2"><i class="high1">DDR5 is said to be released in 2020</i>. RAM manufacturer, <i class="high1">SK Hynix</i>, expects DDR5 to make up <i class="high1">25% of the market in 2020, and 44% in 2021</i>. DDR5 will continue with a 288-pin design, although the RAM voltage will <i class="high1">drop to 1.1V</i>. DDR5 RAM performance is expected to <i class="high1">double the fastest standard of the previous DDR4</i> generation.</p>
+                <p id="infopar3">With ROM we might even find <i class="high1">easier ways to programme(re write) and erase them</i>. These ways could be cheaper and use other forms of technology. Since more people are making their own computers, we might see more <i class="high1">user friendly chips that are easier and cheaper to program</i> and customize.</p>
+                <p id="infopar4">With caches, we can expect Intel to make CPU’s with caches that have even <i class="high1">larger storage capacities and faster write and read speeds</i>. Caches will become larger because that would be a huge <i class="high1">increase in efficiency</i> of devices since the retrieval latency would become much lower.</p>
+            </div>
+        </div>
+    </body>
+</html>

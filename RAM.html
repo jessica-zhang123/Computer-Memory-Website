@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <title>Computer Memory</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <!--Buttons-->
+        <a id="back1" href="index.html">Back to menu</a>
+        <a id="next1" href="Cache.html">Next:Cache</a>
+        <section>
+            <div class="header_ram">
+                <!--Title-->
+                <h1>RAM(Random Access Memory)</h1>
+            </div>
+        <div class="content_ram">
+            <!--General info-->
+            <h2 class="ram_text"><b>Temporarily</b> stores <i>information</i> used by various components of the PC</h2>
+            <h2 class="ram_text">Any information will be <b>lost</b> when the PC turns off or is reset because it uses <i>volatile memory</i></h2>
+            <h2 class="ram_text">CPU uses RAM for <b>temporary storage of programs/data</b></h2>
+            <h2 class="ram_text">RAM usually has a much <b>larger capacity</b> than ROM</h2>
+            <img id="rampic" src="images/rampic.jpg" alt="RAM image"/>
+        </div>
+        <div id="rampar" class="ram_text">
+            <!--Full explanation-->
+            RAM uses <i class="high1">transistors</i>(semiconductor devices used to <i class="high1">amplify or switch</i> electronic signals and electrical power) to turn on or off <i class="high1">access to a capacitor</i>(store the electrical energy and give this energy again to the <i class="high1">circuit when necessary</i>. In other words, it <i class="high1">charges and discharges</i> the electric charge stored in it) at each <i class="high1">intersection.</i>
+        </div>
+        <div class="box">
+            <!--animated cube-->
+            <h1 class="ram_text">Watch this video!-></h1>
+        </div>
+            <!--iframe video-->
+        <iframe id="ramvid" src="https://www.youtube.com/embed/TQCr9RV7twk"></iframe>
+        <h1 id="ramhistory" class="history">~History of Random Access Memory~</h1>
+            <!--timeline-->
+        <img id="ramtime" src="images/ram_timeline.png" alt="RAM timeline"/>
+        <h2 id="types2" class="rom_text">Types of RAM include:</h2>
+        <h2 id="sram" class="rom_text2">SRAM(Static RAM):</h2>
+        <ul id="ramlist1" class="rom_text">
+            <!--discuss different types-->
+            <li>Has 4-6 transistors</li>
+            <li>Holds data in memory as long as power is on~different from DRAM(refreshed periodically with power)</li>
+            <li>Faster than DRAM</li>
+            <li>More expensive than most forms of memory</li>
+            <li>Used in caches in the CPU</li>
+            <li>Limited in capacity compared to DRAM</li>
+        </ul>
+        <img id="srampic" src="images/sram.jpg" alt="SRAM image"/>
+        <h2 id="dram" class="rom_text2">DRAM(Dynamic RAM):</h2>
+        <ul id="ramlist2" class="rom_text">
+            <!--discuss different types-->
+            <li>Widely used as computer’s main memory</li>
+            <li>Each cell is made up of transistors and capacitors in an integrated circuit and the data bit is stored in a capacitor.</li>
+            <li>Transistors always leak a small amount, causing the capacitor to slowly discharge which causes information stored to drain.</li>
+            <li>So, DRAM has to be refreshed(given a new electronic charge every few milliseconds to retain data)</li>
+        </ul>
+        <img id="drampic" src="images/dram.jpg" alt="DRAM image"/>
+       <h2 id="sdram" class="rom_text2">SDRAM(Synchronous DRAM):</h2>
+        <ul id="ramlist3" class="rom_text">
+            <!--discuss different types-->
+            <li>Synchronizes the memory speed with CPU clock speed so that the memory controller knows the exact clock cycle when the requested data will be ready</li>
+            <li>CPU is able to perform more instructions at a given time</li>
+            <li>Is able to transfers data at speeds up to 133 MHz</li>
+            <li>Can run at faster speeds because the memory controller and CPU clock cycle coordinate efficiently</li>
+        </ul>
+        <img id="sdrampic" src="images/sdram.jpg" alt="SDRAM image"/>
+        <h2 id="rdram" class="rom_text2">RDRAM(Rambous DRAM):</h2>
+        <ul id="ramlist4" class="rom_text">
+            <!--discuss different types-->
+            <li>Made by a company named Rambous</li>
+            <li>Was popular in the year 2000 and was used for video game devices and graphics cards</li>
+            <li>Transfer speed is up to 1 GHz</li>
+        </ul>
+        <img id="rdrampic" src="images/rdram.jpg" alt="RDRAM image"/>
+        <h2 id="ddrsdram" class="rom_text2">DDR SDRAM(Double Data Rate SDRAM):</h2>
+        <ul id="ramlist5" class="rom_text">
+            <!--discuss different types-->
+            <li>A type of synchronous memory</li>
+            <li>Almost doubles the bandwidth (range of frequencies within a given band, in particular that used for transmitting a signal) of a single data rate(SDR)</li>
+            <li>SDR SDRAM can only read/write one time in a clock cycle</li>
+            <li>SDRAM runs at the same clock frequency by using a method called “double pumping”</li>
+            <li>Double pumping allows transfer of data on both the rising and falling edges of the clock signal without an increase in the clock frequency</li>
+        </ul>
+        <img id="ddrsdrampic" src="images/ddrsdram.jpg" alt="DDRSDRAM image"/>
+        <h1 id="rampack" class="history">~Types of DRAM packages~</h1>
+        <h2 id="simm" class="rom_text2">Single In-line Memory Module(SIMM):</h2>
+        <ul id="ramlist6" class="rom_text">
+            <!--discuss different types-->
+            <li>Widely used in year 1980-1990, not frequently used today</li>
+            <li>Had a 32-bit data bus</li>
+            <li>Had 30 to 72 pins(pins-connect the RAM to the motherboard, more pins=more power)</li>
+            <li>Held 8-9 RAM chips</li>
+        </ul>
+        <img id="simmpic" src="images/simm.jpg" alt="SIMM image"/>
+        <h2 id="dimm" class="rom_text2">Dual In-Line Memory Module(DIMM):</h2>
+        <ul id="ramlist7" class="rom_text">
+            <!--discuss different types-->
+            <li>Current and recent memory modules are DIMM</li>
+            <li>"Dual in-line" refers to pins located on both sides of the modules</li>
+            <li>Originally had a 1658-pin connector that supported a 64-bit data bus(system within a computer or device, that consists of a connector or set of wires, that moves data) that has twice the data width of SIMM</li>
+            <li>A wider bus allows more data to pass through which causes a faster overall performance</li>
+        </ul>
+        <img id="dimmpic" src="images/dimm.jpg" alt="DIMM image"/>
+        <h2 id="ddr" class="rom_text2">DDR1, DDR2, DDR3, DDR4(generations):</h2>
+        <ul id="ramlist8" class="rom_text">
+            <!--discuss different types-->
+            <li>Each generation becomes better than the last at delivering higher transfer rates and faster performance</li>
+            <li>Although they are all the same size and shape, they cannot be used in a motherboard that supports a different version</li>
+            <li>They all have a notch cut in the pins at different locations. This way, users will not be able to slot it in the motherboard and possibly damage both pieces of equipment if they are not compatible</li>
+        </ul>
+        <img id="ddrpic" src="images/ddr.jpg" alt="DDR image"/>
+        </section>
+    </body>
+</html>
