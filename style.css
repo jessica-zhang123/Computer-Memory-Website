@@ -1,0 +1,808 @@
+/*index.html*/
+body,html{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    width:100%;
+    height:100%;
+
+}
+/*creating the animated header that transitions to different images*/
+.top{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+	background-image: url("images/image1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    animation: slide 10s infinite;
+
+}
+/*positioning and aligning text*/
+.content{
+    position:absolute;
+    transform:translate(-1%,110%);
+    text-align:center;
+
+}
+/*positioning and aligning only h1 items*/
+.content h1{
+    font-weight:bolder;
+    color:white;
+    font-size:100px;
+    letter-spacing:15px
+
+}
+/*creating font and positioning as well as rounding borders*/
+.content #explore{
+    position:absolute;
+    transform:translate(190%,55%);
+    margin:20px;
+    width:20%;
+    border-radius:75px;
+    background-color:#66ffb3;
+    text-align:center;
+    font-family:"Noto Sans HK",sans-serif;
+    font-size:25px
+
+}
+/*making square buttons*/
+.button{
+    display:inline-block;
+    padding:30px 30px;
+    border:3px solid #66ffb3;
+    font-family:"Roboto",sans-serif;
+    font-weight:bolder;
+    text-align:center;
+    color:white;
+    font-size:30.5px;
+    transition: all 0.2s;
+    }
+    /*making them change color when hovered over*/
+    .button:hover{
+    color:rgb(204,255,204);
+}
+#first{
+    margin:50px;
+    width:40%;
+    border-radius:75px;
+    background-color:rgb(204,255,204);
+    text-align:center;
+    font-family:"Roboto",sans-serif;
+}
+.first_text{
+    font-family:"Roboto",sans-serif;
+
+}
+
+.types h2{
+    text-align:center;
+    font-family:"Roboto",sans-serif;
+}
+.ROM,.RAM,.Cache{
+    font-family:"Roboto",sans-serif;
+    font-size:30px;
+}
+/*altering image size and position*/
+.ROM img{
+    height:400px;
+    width:400px;
+    float:left;
+    margin:20px;
+}
+.ROM #cache{
+    border-radius:50%;
+    height:300px;
+    width:300px;
+    margin:50px
+}
+#title1,#title2,#title3,#types{
+    font-weight:bolder;
+    color:#004d80;
+}
+
+.jots{
+    font-family:"Roboto",sans-serif;
+    font-size:30px;
+    color:black;
+    font-weight:lighter;
+}
+/*making animation for animated header*/
+@keyframes slide{
+	0%{
+    background-image:url("images/image1.jpg");
+    }
+    33%{
+    background-image:url("images/image2.jpg");
+    }
+    67%{
+    background-image:url("images/image3.jpg");
+    }
+}
+
+/*ROM webpage*/
+.content_rom #see{
+    position:absolute;
+    transform:translate(20%,10%);
+    margin:10px;
+    width:70%;
+    border-radius:75px;
+    background-color:#90c797;
+    height:25%;
+    text-align:center;
+    color:white;
+    font-family:"Noto Sans HK",sans-serif;
+    font-size:70px
+}
+#rom_body{
+    background-color:#808080;
+}
+#rompic{
+    transform:translate(-30%,200%);
+    float:left;
+}
+.rom_text{
+    font-family:"Roboto",sans-serif;
+    font-size:30px;
+    font-weight:lighter;
+    transform:translate(5%,790%)
+}
+/*creating rounded blocks*/
+.history{
+    background-color: #00b38f;
+    position:absolute;
+    transform:translate(20%,255%);
+    margin:10px;
+    width:70%;
+    border-radius:75px;
+    height:20%;
+    text-align:center;
+    color:white;
+    font-family:"Noto Sans HK",sans-serif;
+    font-size:40px
+}
+/*positioning blocks of text using transform:*/
+#romtime{
+    height:90%;
+    width:90%;
+    transform:translate(5%,30%);
+}
+#types{
+    transform:translate(5%,1700%);
+}
+#par{
+    transform:translate(0%,120%);
+    margin:35px;
+}
+.high{
+    background-color:#ffb3ff;
+}
+/*changing dimensions of video and iframe website*/
+#romvideo{
+    transform:translate(20%,120%);
+    width:560px;
+    height:315px;
+}
+#romweb{
+    transform:translate(30%,80%);
+    height:500px;
+    width:700px;
+}
+.rom_text2{
+    font-family:"Noto Sans HK",sans-serif;
+    font-size:30px;
+    font-weight:bolder;
+    color:#004d80;
+    transform:translate(5%,500%)
+}
+#prom{
+    transform:translate(20%,700%)
+}
+#romlist{
+    transform:translate(10%,70%)
+}
+/*making parallax of images*/
+.parallax1{
+    background:url("images/prom_parallax.jpg") no-repeat center;
+    background-size:cover;
+    /*creates the parallax effect*/
+    background-attachment:fixed;
+    height:500px;
+    transform:translate(5%,50%);
+}
+#eprom{
+    transform:translate(-10%,900%);
+}
+#romlist2{
+    transform:translate(10%,50%);
+}
+/*different parallax for each*/
+.parallax2{
+    background:url("images/eprom_parallax.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:400px;
+    transform:translate(5%,50%);
+}
+.parallax3{
+    background:url("images/mrom_parallax.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:400px;
+    transform:translate(5%,100%);
+}
+#mrom{
+    transform:translate(-10%,900%);
+}
+#romlist3{
+    transform:translate(10%,70%);
+}
+#eeprom{
+    transform:translate(-10%,1500%);
+}
+#romlist4{
+    transform:translate(10%,150%);
+}
+.parallax4{
+    background:url("images/eeprom_parallax.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:200px;
+    transform:translate(5%,280%);
+}
+#feeprom{
+    transform:translate(-10%,2000%);
+}
+#romlist5{
+    transform:translate(10%,250%);
+}
+.parallax5{
+    background:url("images/feeprom_parallax.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:400px;
+    transform:translate(5%,100%);
+}
+/*buttons*/
+#back{
+    float:left;
+    transform:translate(5%,5%);
+    background-color:#0099e6;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    /*buttons that change color when hovered over*/
+    #back:hover{
+        background-color:#4dc3ff;
+    }
+
+
+#next{
+    float:left;
+    transform:translate(800%,5%);
+    background-color:#cc66ff;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #next:hover{
+        background-color:#dd99ff;
+    }
+#rom1{
+    transform:translate(-5%,900%);
+}
+#rom2{
+    transform:translate(-5%,550%);
+}
+#rom3{
+    transform:translate(-5%,1200%);
+}
+
+/*RAM web page*/
+/*creating rounded header*/
+section{
+    height:300px;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+    /*changing dimensions of border radius so it is not completely uniform*/
+    border-radius:0 0 50% 50%/0 0 100% 100%;
+    background-image: linear-gradient(45deg,#008080,#40bf80);
+}
+
+
+section .header_ram{
+    position:relative;
+    text-align:center;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-size:50px;
+
+}
+
+#rampic{
+    float:right;
+    height:300px;
+    width:500px;
+    transform:translate(10%,20%);
+}
+/*different text with different font*/
+.ram_text{
+    font-family:"Roboto",sans-serif;
+    font-size:30px;
+    font-weight:lighter;
+    transform:translate(5%,400%)
+}
+/*buttons for second web page*/
+#back1{
+    float:left;
+    margin:5px;
+    transform:translate(5%,5%);
+    background-color:#0099e6;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #back1:hover{
+        background-color:#4dc3ff;
+    }
+
+
+#next1{
+    margin:5px;
+    float:left;
+    transform:translate(720%,5%);
+    background-color:#ff6666;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #next1:hover{
+        background-color:#ffb3b3;
+    }
+#rampar{
+    transform:translate(5%,120%);
+    font-weight:normal;
+}
+/*create highlighted text effect*/
+.high1{
+    background-color:#ffff99;
+}
+/*box animation with hover*/
+.box{
+    width:300px;
+    height:300px;
+    background:#ccffcc;
+    margin:300px;
+    transition-duration:1500ms;
+    text-align:center;
+}
+.box:hover{
+    background:#80ff80;
+    transform:rotate(45deg);
+}
+
+#ramvid{
+    transform:translate(120%,-150%);
+    width:600px;
+    height:415px;
+}
+#ramtime{
+    height:900px;
+    width:1500px;
+    transform:translate(0%,-60%);
+}
+#ramhistory{
+    background-color:#6666ff;
+    padding:60px;
+    height:80px;
+    transform:translate(15%,-290%);
+}
+#types2{
+    float:left;
+    transform:translate(10%,-3200%);
+    font-size:30px;
+    font-weight:bolder;
+    color:#004d80;
+}
+/*positioning of elements*/
+#sram{
+    transform:translate(-20%,-1500%);
+}
+#ramlist1{
+    transform:translate(1%,-300%);
+}
+#srampic{
+    transform:translate(90%,-200%);
+}
+#dram{
+    transform:translate(0%,-1500%);
+}
+#ramlist2{
+    transform:translate(1%,-300%);
+}
+#drampic{
+    transform:translate(10%,-170%);
+    width:600px;
+}
+#sdram{
+    transform:translate(0%,-1250%);
+}
+#ramlist3{
+    transform:translate(1%,-300%);
+}
+#sdrampic{
+    transform:translate(140%,-130%);
+    width:600px;
+}
+#rdram{
+    transform:translate(0%,-1250%);
+}
+#ramlist4{
+    transform:translate(1%,-500%);
+}
+#rdrampic{
+    transform:translate(10%,-95%);
+    width:800px;
+}
+
+#ddrsdram{
+    transform:translate(0%,-1250%);
+}
+#ramlist5{
+    transform:translate(1%,-212%);
+}
+#ddrsdrampic{
+    transform:translate(80%,-200%);
+    width:800px;
+}
+
+#rampack{
+    /*gradient of color*/
+    background-image: linear-gradient(to right,#ff8566,#ffcc66,#ffff80,#d5ff80,#99ccff,#ff99ff);
+    height:100px;
+    font-size:60px;
+    padding:40px;
+    transform:translate(15%,-230%);
+}
+#simm{
+    transform:translate(0%,-300%);
+}
+#ramlist6{
+    transform:translate(1%,-90%);
+}
+#simmpic{
+    transform:translate(10%,-50%);
+    width:800px;
+}
+
+#dimm{
+    transform:translate(0%,-200%);
+}
+#ramlist7{
+    transform:translate(1%,-50%);
+}
+#dimmpic{
+    transform:translate(70%,-30%);
+    width:800px;
+}
+
+#ddr{
+    transform:translate(0%,-180%);
+}
+#ramlist8{
+    transform:translate(1%,-40%);
+}
+#ddrpic{
+    transform:translate(30%,-15%);
+    width:600px;
+}
+/*Cache web page*/
+/*moving header from left to right-ease in*/
+#cache_head{
+    width:1000px;
+    height:200px;
+    padding:35px;
+    border-radius:100px;
+    transform:translate(0%,70%);
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-size:100px;
+    text-align:center;
+    /*gradient*/
+    background-image:linear-gradient(90deg,#b3cce6,#ffccff,#dd99ff);
+    font-weight:bold;
+    position:relative;
+    animation:move_header 5s infinite;
+    animation-timing-function:ease-in;
+}
+/*animation with keyframes*/
+@keyframes move_header{
+    from{left:0px;}
+    to{left:450px;}
+}
+/*buttons for next web page*/
+#back2{
+    float:left;
+    margin:5px;
+    transform:translate(5%,-280%);
+    background-color:#0099e6;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #back2:hover{
+        background-color:#4dc3ff;
+    }
+
+
+#next2{
+    margin:5px;
+    float:left;
+    transform:translate(370%,-280%);
+    background-color:#3973ac;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #next2:hover{
+        background-color:#b3cce6;
+    }
+.cache_content{
+    font-weight:lighter;
+    font-size:35px;
+
+}
+/*positioning*/
+#cache1{
+    transform:translate(-35%,-700%);
+}
+#cache2{
+    transform:translate(-3%,-1400%);
+}
+#cache3{
+    transform:translate(-3%,-1400%);
+}
+#cache_pic{
+    transform:translate(140%,0%);
+    width:600px;
+}
+/*position video*/
+#cachevid{
+    width:650px;
+    height:450px;
+    transform:translate(-80%,50%);
+}
+
+#levels{
+    transform:translate(5%,150%);
+    font-size:80px;
+}
+#cachelist1{
+    transform:translate(5%,-700%);
+}
+/*expanding box animation*/
+#common{
+    width:500px;
+    height:100px;
+    text-align:center;
+    border-radius:100px;
+    color:white;
+    padding:25px;
+    transform:translate(140%,-70%);
+    transition-property:width,padding;
+    background-image:linear-gradient(45deg,#66b3ff,#cc99ff);
+    animation:move_common 5s infinite;
+
+}
+@keyframes move_common{
+    from{width:500px;padding:25px;}
+    to{height:200px;padding:50px;}
+}
+
+#cachelist2{
+    transform:translate(5%,-670%);
+}
+/*from right to left box animation*/
+#cachebub{
+    width:400px;
+    height:100px;
+    text-align:center;
+    border-radius:100px;
+    color:white;
+    padding:25px;
+    transform:translate(200%,-80%);
+    transition-property:width,padding;
+    background-image:linear-gradient(45deg,#ff8080,#ffcc66);
+    animation:move_common 5s infinite;
+}
+
+#cachelist3{
+    transform:translate(5%,-620%);
+}
+#cachebub1{
+    width:450px;
+    height:150px;
+    text-align:center;
+    border-radius:100px;
+    color:white;
+    padding:30px;
+    transform:translate(200%,70%);
+    background-image:linear-gradient(45deg,#ff66cc,#ffcccc);
+}
+
+#cachepar{
+    transform:translate(0%,100%);
+    margin:30px;
+}
+/*More Information web page*/
+/*animated background*/
+.parallaxinfo{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    background-image: url("images/infoback.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    animation: slide2 10s infinite;
+
+}
+/*animation with keyframes to transition to each image*/
+@keyframes slide2{
+    0%{
+    background-image:url("images/infoback.jpg");
+    }
+    33%{
+    background-image:url("images/infoback2.png");
+    }
+    67%{
+    background-image:url("images/infoback3.jpg");
+    }
+}
+#moreinfo{
+    transform:translate(12%,30%);
+}
+#scrollinfo{
+    background-color:#ff80d5;
+    text-align:center;
+    color:white;
+    border-radius:150px;
+    font-family:"Noto Sans HK",sans-serif;
+    font-size:50px;
+    padding:35px;
+    width:500px;
+    transform:translate(100%,100%);
+}
+#infopar{
+    margin:55px;
+    transform:translate(-5%,-5850%);
+}
+#buymem{
+    transform:translate(0%,-40500%);
+}
+/*table asthetics*/
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size:20px;
+    width:1400px;
+    padding:10px;
+}
+
+table{
+    /*creating some space around the table so that it is not connected to the sides of the screen*/
+    margin:35px;
+    width:1400px;
+    transform:translate(-5%,-1510%);
+}
+.large{
+    width:20000px;
+}
+#future{
+    height:150px;
+    padding:35px;
+    font-size:50px;
+    text-align:center;
+    background-image: linear-gradient(to right,#ff809f,#9f80ff,#80dfff);
+    transform:translate(15%,-11300%);
+}
+/*moving paragraphs*/
+#infopar1{
+    transform:translate(-10%,-10100%);
+    margin:10px;
+}
+#infopar2{
+    transform:translate(-10%,-16100%);
+    margin:10px;
+}
+#infopar3{
+    transform:translate(-10%,-16550%);
+    margin:10px;
+}
+#infopar4{
+    transform:translate(-10%,-16900%);
+    margin:10px;
+}
+#back3{
+    float:left;
+    margin:5px;
+    transform:translate(15%,-1100%);
+    background-color:#0099e6;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #back3:hover{
+        background-color:#4dc3ff;
+    }
+
+/*buttons for next web page*/
+#next3{
+    margin:5px;
+    float:left;
+    transform:translate(610%,-1100%);
+    background-color:#ff1a8c;
+    padding:15px;
+    font-family:"Roboto",sans-serif;
+    color:white;
+    font-weight:300;
+    text-align:center;
+    font-size:25px;
+    border-radius:75px;
+    }
+    #next3:hover{
+        background-color:#ffa64d;
+    }
+/*decorating the background of source page*/
+#backsource{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    background-size:cover;
+    background-image:linear-gradient(45deg,#FFCCCC,#B3D9FF,#DAB3FF);
+}
+/*Sources web page*/
+/*altering text*/
+#sourcehead{
+    font-size:50px;
+    text-align:center;
+    font-weight:bolder;
+}
+#sourceword{
+    transform:translate(-5%,-650%);
+}
+#imgsrc{
+    transform:translate(1%,20%);
+}
